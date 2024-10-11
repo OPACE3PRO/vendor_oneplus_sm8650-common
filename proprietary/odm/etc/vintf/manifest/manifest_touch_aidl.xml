@@ -3,6 +3,6 @@
     <hal format="aidl">
         <name>vendor.oplus.hardware.touch</name>
         <version>2</version>
-        <fqname>IOplusTouch/default</fqname>
+        <fqname>IOplusTouch/oplus</fqname>
     </hal>
 </manifest>

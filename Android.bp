@@ -198,6 +198,9 @@ android_app_import {
 	name: "CACertService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	soc_specific: true,
 }
@@ -206,6 +209,9 @@ android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	required: ["CneApp.libvndfwk_detect_jni.qti_vendor_symlink"],
 	certificate: "platform",
 	soc_specific: true,
@@ -215,6 +221,9 @@ android_app_import {
 	name: "IWlanService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	soc_specific: true,
 }
@@ -223,6 +232,9 @@ android_app_import {
 	name: "TimeService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	soc_specific: true,
 }
@@ -231,6 +243,9 @@ android_app_import {
 	name: "ImsRcsService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	system_ext_specific: true,
 }
@@ -239,6 +254,9 @@ android_app_import {
 	name: "QCC",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/QCC/QCC.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	system_ext_specific: true,
 }
@@ -247,6 +265,9 @@ android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	system_ext_specific: true,
 }
@@ -255,6 +276,9 @@ android_app_import {
 	name: "WfdService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
@@ -264,6 +288,9 @@ android_app_import {
 	name: "dpmserviceapp",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
@@ -273,6 +300,9 @@ android_app_import {
 	name: "ims",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
@@ -282,6 +312,9 @@ android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	dex_preopt: {
+		enabled: false,
+	},
 	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
@@ -854,6 +887,15 @@ prebuilt_etc_xml {
 	name: "manifest_oplus_cwb_aidl",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cwb_aidl.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_fingerprint_aidl_v3",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,

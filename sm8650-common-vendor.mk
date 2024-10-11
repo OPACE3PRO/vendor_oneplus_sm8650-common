@@ -10,6 +10,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.secure_element-service.qti \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-performance-V1-service \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-touch-V2-service \
+    vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature-service \
@@ -590,6 +591,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/occe_create.rc:$(TARGET_COPY_OUT_ODM)/etc/init/occe_create.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
@@ -615,7 +617,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/ufs/SKhynix-HN8T374ZJKX141.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SKhynix-HN8T374ZJKX141.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh:$(TARGET_COPY_OUT_ODM)/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/ufs/ufs_version_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/ufs/ufs_version_config.xml \
-    vendor/oneplus/sm8650-common/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
+    vendor/oneplus/sm8650-common/proprietary/vendor/lib64/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsn100u_fw.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib/rfsa/adsp/aiboost/unsigned/libQnnHtpV75Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/unsigned/libQnnHtpV75Skel.so \
@@ -838,6 +840,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libocce3a.so:$(TARGET_COPY_OUT_ODM)/lib64/libocce3a.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/liboemconfigurationutil.so:$(TARGET_COPY_OUT_ODM)/lib64/liboemconfigurationutil.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libolc_vnd.so:$(TARGET_COPY_OUT_ODM)/lib64/libolc_vnd.so \
+    vendor/oneplus/sm8650-common/proprietary/odm/lib64/liboplus-uah-client.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus-uah-client.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/liboplusblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplusblur_capture_api.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosenseaidlhalclient.so \
@@ -895,6 +898,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.stability.oplus_project-V2-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.stability.oplus_project-V2-ndk.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V1-ndk.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V2-ndk.so \
+    vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.urcc-V1-ndk.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so \
@@ -2449,7 +2453,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.oplus.hardware.cwb-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb-V1-ndk.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.oplus.hardware.ims-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.ims-V1-ndk.so \
-    vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.oplus.hardware.olc2-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.olc2-V2-ndk.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display-V2-ndk.so \
@@ -2712,6 +2715,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_camera_rfi \
     manifest_oplus_cammidasservice_aidl \
     manifest_oplus_cwb_aidl \
+    manifest_oplus_fingerprint_aidl_v3 \
     manifest_oplus_sendextcamcmd \
     manifest_oplus_stability_project_aidl \
     manifest_performance_aidl \
