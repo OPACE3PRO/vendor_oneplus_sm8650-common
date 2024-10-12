@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service \
+    vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.oplus.hardware.urcc-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.urcc-service \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature-service \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/hw/virtualcameraprovider:$(TARGET_COPY_OUT_ODM)/bin/hw/virtualcameraprovider \
     vendor/oneplus/sm8650-common/proprietary/odm/bin/irisConfig:$(TARGET_COPY_OUT_ODM)/bin/irisConfig \
@@ -594,6 +595,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.urcc-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.urcc-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/virtualcameraprovider.rc:$(TARGET_COPY_OUT_ODM)/etc/init/virtualcameraprovider.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
@@ -878,6 +880,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_image_optical_zoom.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_video_optical_zoom.so \
+    vendor/oneplus/sm8650-common/proprietary/odm/lib64/liburcccore.so:$(TARGET_COPY_OUT_ODM)/lib64/liburcccore.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libvega_common.so:$(TARGET_COPY_OUT_ODM)/lib64/libvega_common.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libvega_face.so:$(TARGET_COPY_OUT_ODM)/lib64/libvega_face.so \
     vendor/oneplus/sm8650-common/proprietary/odm/lib64/libwatermark_photo.so:$(TARGET_COPY_OUT_ODM)/lib64/libwatermark_photo.so \
@@ -2720,6 +2723,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_stability_project_aidl \
     manifest_performance_aidl \
     manifest_touch_aidl \
+    vendor.oplus.hardware.urcc-service \
     vendor.pixelworks.hardware.display-service \
     vendor.pixelworks.hardware.feature-service
 

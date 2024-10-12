@@ -938,6 +938,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "vendor.oplus.hardware.urcc-service",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.pixelworks.hardware.display-service",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.display-service.xml",
